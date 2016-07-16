@@ -116,8 +116,8 @@ SQL statements into your database::
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(50),
         body TEXT,
-        created DATETIME DEFAULT NULL,
-        modified DATETIME DEFAULT NULL
+        created DATETIME DEFAULT CURRENT_TIMESTAMP,
+        modified DATETIME DEFAULT CURRENT_TIMESTAMP
     );
 
     /* Then insert some articles for testing: */
